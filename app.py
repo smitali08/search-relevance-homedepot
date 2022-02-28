@@ -14,7 +14,9 @@ from nltk.stem.snowball import SnowballStemmer
 from collections import Counter
 snow = SnowballStemmer(language='english')
 from rank_bm25 import BM25Okapi
-import os
+nltk.download('stopwords')
+
+
 # Initial page configuration
 st.set_page_config(
     page_title='Home Depot Search Relevance',
